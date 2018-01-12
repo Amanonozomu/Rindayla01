@@ -1,0 +1,1018 @@
+@charset "utf-8";
+
+
+body{
+	width: 100%;
+	height: 3500px;
+	background-image:url('../image/background2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#top-bar{
+ width:100%;
+ height:65px;
+ background:#fff;
+ position:fixed;
+ top:-70px;
+ opacity: 0.7;
+z-index: 10;
+ 
+-webkit-box-shadow: 0px 8px 15px #333;
+-moz-box-shadow: 0px 1px 15px #333;
+box-shadow: 0px 1px 15px #333; 
+}
+
+.mainmenu1 {
+	margin-top: 16px;
+}
+
+.mainmenu1 li{
+	float: left;
+	list-style: none;
+	text-decoration: none;
+}
+
+.mainmenu1 li a{
+	color: #000;
+	font-size: 20px;
+	font-family: menutex;
+}
+
+.mainmenu1 li img{
+	width: 90px;
+	margin-top: -7px;
+}
+
+.mainmenu li{
+	float: left;
+	list-style: none;
+	text-decoration: none;
+}
+
+.mainmenu li a{
+	color: #fff;
+	font-size: 20px;
+	font-family: menutex;
+}
+
+#top-bar1{
+ width:100%;
+ height:475px;
+ background:#fff;
+ position:fixed;
+ top:-70px;
+ opacity: 0.7;
+-webkit-box-shadow: 0px 8px 15px #333;
+-moz-box-shadow: 0px 1px 15px #333;
+box-shadow: 0px 1px 15px #333; 
+display: none;
+}
+
+.mainmenu2 li{
+	float: left;
+	list-style: none;
+	text-decoration: none;
+}
+
+.mainmenu2 li a{
+	color: #000;
+	font-size: 20px;
+	font-family: menutex;
+}
+
+.mainmenu2 li img{
+	width: 200px;
+}
+
+.menu-section{
+	display: none;
+}
+
+#toplogo{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 700px;
+	text-align:center;
+}
+
+#toplogo_smart{
+	display: none;
+}
+
+#toplogo .mainlogo{
+	margin-top: 1%;
+	margin-left: 2%;
+	float: none;
+	width: 70%;
+}
+
+.hapa1{
+	display: inline-block;
+	width: 6%;
+	margin-top: -3%;
+	margin-left: 30%;
+	margin-right: 30%;
+	animation-name: flash;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    /* Chrome 4+, Safari 4+, Opera 15+ */
+    -webkit-animation-name: flash;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  
+    /* Firefox 5+ */
+    -moz-animation-name: flash;
+    -moz-animation-duration: 2.5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+}
+
+@keyframes flash {  
+    0% { opacity: 1.0 }
+    50% { opacity: 0.1 }
+    100% { opacity: 1.0 }
+}
+
+/* Chrome 4+, Safari 4+, Opera 15+ */
+@-webkit-keyframes flash {  
+    0% { opacity: 1.0 }
+    50% { opacity: 0.1 }
+    100% { opacity: 1.0 }
+}
+
+/* Firefox 5+ */
+@-moz-keyframes flash {  
+    0% { opacity: 1.0 }
+    50% { opacity: 0.1 }
+    100% { opacity: 1.0 }
+}
+
+#about{
+	margin-top: 5%;
+	padding-top: 95px;
+	padding-left: 50px;
+	width: 60%;
+	height: 620px;
+	margin-left: 22%;
+	margin-right: auto;
+}
+
+.about2{
+	display: none;
+}
+
+#about h1{
+	font-size: 46px;
+	font-family:bodytext;
+}
+
+#about p{
+	font-size: 16px;
+	line-height:32px;
+	margin-top: 75px;
+	margin-left: -28px;
+	letter-spacing: 3px;
+	color: #635a5a;
+	font-weight: bold;
+	font-family:bodytext;
+}
+
+.hapa2{
+	z-index:-1;
+	position: absolute;
+	margin-top: 12px;
+	margin-left: -32px;
+}
+
+.hapa3{
+	width: 6%;
+	z-index:-1;
+	position: absolute;
+	margin-top: 0.8%;
+	margin-left: -8.6%;
+}
+
+.cyaba{
+	z-index:-1;
+	width: 400px;
+	margin-top: -110px;
+	margin-left: 390px; 
+}
+
+#teamap{
+	display: inline-block;
+	width: 1440px;
+	height: 660px;
+	margin-top: 150px;
+	padding-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#teamap h1{
+	font-size: 46px;
+	font-family:bodytext;
+	margin-left: 8%;
+}
+
+.mapall{
+	padding-left: 80px;
+}
+
+.taiwanclear{
+	margin-top: 60px;
+}
+
+.taiwan_sm{
+	display: none;
+}
+
+.taipei{
+	position: absolute;
+	width: 50px;
+	margin-top: -413px;
+	margin-left: 715px;
+	z-index: 6;
+	font-family:bodytext;
+}
+
+#teamap .taipei:hover{
+	color: #fff;
+	z-index: 5;
+}
+
+#teamap .kagi:hover{
+	color: #fff;
+	z-index: 5;
+}
+
+#teamap .shinpei:hover{
+	color: #fff;
+	z-index: 5;
+}
+
+#teamap .touen:hover{
+	color: #fff;
+	z-index: 5;
+}
+
+#teamap .shinju:hover{
+	color: #fff;
+	z-index: 5;
+}
+
+#teamap .nantou:hover{
+	color: #fff;
+	z-index: 5;
+}
+
+.taipei:hover .taipei1{
+	content: url('../image/tekanno.png');
+	display: block;
+	position: absolute;
+	z-index: 3;
+	margin-top: -80px;
+	margin-left: 25px;
+}
+
+.taipei:hover:after{
+	content: url('../image/taipei-green.png');
+	display: block;
+	position: absolute;
+	z-index: -1;
+	margin-top: -31px;
+	margin-left: 6px;
+}
+
+.shinpei{
+	position: absolute;
+	width: 50px;
+	margin-top: -388px;
+	margin-left: 727px;
+	z-index: 2;
+	font-family:bodytext;
+}
+
+.shinpei:hover .shinpei1{
+	content: url('../image/bunnzan.png');
+	display: block;
+	position: absolute;
+	z-index: 3;
+	margin-top: -48px;
+	margin-left: 35px;
+}
+
+.shinpei:hover .shinpei2{
+	content: url('../image/sansya.png');
+	display: block;
+	position: absolute;
+	z-index: 3;
+	margin-top: 0px;
+	margin-left: 8px;
+}
+
+.shinpei:hover:after{
+	content: url('../image/shinpei-green.png');
+	display: block;
+	position: absolute;
+	z-index: -1;
+	margin-top: -66px;
+	margin-left: -25px;
+}
+
+.touen{
+	position: absolute;
+	width: 50px;
+	margin-top: -396px;
+	margin-left: 673px;
+	z-index: 6;
+	font-family:bodytext;
+}
+
+.touen:hover .touen1{
+	content: url('../image/ryutan.png');
+	display: block;
+	position: absolute;
+	z-index: 3;
+	margin-top: -70px;
+	margin-left: -460px;
+}
+
+.touen:hover:after{
+	content: url('../image/touen-green.png');
+	display: block;
+	position: absolute;
+	z-index: -1;
+	margin-top: -36px;
+	margin-left: -8px;
+}
+
+.shinju{
+	position: absolute;
+	width: 50px;
+	margin-top: -362px;
+	margin-left: 667px;
+	z-index: 6;
+	font-family:bodytext;
+}
+
+.shinju:hover .shinju1{
+	content: url('../image/touhou.png');
+	display: block;
+	position: absolute;
+	z-index: 3;
+	margin-top: -32px;
+	margin-left: -435px;
+}
+
+.shinju:hover:after{
+	content: url('../image/shinju-green.png');
+	display: block;
+	position: absolute;
+	z-index: -1;
+	margin-top: -44px;
+	margin-left: -12px;
+}
+
+.taicyu{
+	position: absolute;
+	width: 50px;
+	margin-top: -302px;
+	margin-left: 667px;
+	z-index: 6;
+	display: none;
+	font-family:bodytext;
+}
+
+.nantou{
+	position: absolute;
+	width: 50px;
+	margin-top: -255px;
+	margin-left: 644px;
+	z-index: 6;
+	font-family:bodytext;
+}
+
+.nantou:hover .nantou1{
+	content: url('../image/toucyou.png');
+	display: block;
+	position: absolute;
+	z-index: 3;
+	margin-top: -65px;
+	margin-left: 45px;
+}
+
+.nantou:hover .nantou2{
+	content: url('../image/souhaku.png');
+	display: block;
+	position: absolute;
+	z-index: 3;
+	margin-top: -15px;
+	margin-left: 48px;
+}
+
+.nantou:hover .nantou3{
+	content: url('../image/arisan.png');
+	display: block;
+	position: absolute;
+	z-index: 3;
+	margin-top: 15px;
+	margin-left: 35px;
+}
+
+.nantou:hover .nantou4 {
+	content: url('../image/nichigetu.png');
+	display: block;
+	position: absolute;
+	z-index: 3;
+	margin-top: 20px;
+	margin-left: -430px;
+}
+
+.nantou:hover:after{
+	content: url('../image/nantou-green.png');
+	display: block;
+	position: absolute;
+	z-index: -1;
+	margin-top: -66px;
+	margin-left: -21px;
+}
+
+.kagi{
+	position: absolute;
+	width: 50px;
+	margin-top: -212px;
+	margin-left: 595px;
+	z-index: 6;
+	font-family:bodytext;
+}
+
+.kagi:hover .kagi1{
+	content: url('../image/kousan.png');
+	display: block;
+	position: absolute;
+	z-index: 3;
+	margin-top: -60px;
+	margin-left: -317px;
+}
+
+.kagi:hover:after{
+	content: url('../image/kagi-green.png');
+	display: block;
+	position: absolute;
+	z-index: -1;
+	margin-top: -30px;
+	margin-left: -29px;
+}
+
+.move_on_map{
+	margin-top: -75px;
+	padding-right: 560px;
+}
+
+.clickmap{
+	display: none;
+}
+
+#teapot{
+	margin-top: 20px;
+	width: 80%;
+	height: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 150px;
+	padding-left: 8%;
+	color: #fff;
+	font-family: teapot;
+
+}
+
+#teapot h1{
+	font-size: 46px;
+	margin-bottom: 20px;
+	margin-top: 48px;
+}
+
+.taitle1{
+	font-size: 37px;
+}
+
+#teapot p{
+	font-size: 20px;
+	line-height: 32px;
+	letter-spacing: 3px;
+	text-shadow: 2px 2px #434a54;
+}
+
+.more{
+	position: absolute;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: -1%;
+	margin-left: 22%;
+}
+
+.more a{
+	color: #fff;
+}
+
+.ita{
+	position: absolute;
+	z-index:-10;
+	margin-top: -4%;
+	margin-left: -6%;
+}
+
+.bot{
+	position: absolute;
+	z-index:-2;
+	width: 760px;
+	margin-top: 190px;
+	margin-left: 400px;
+}
+
+.hapaall{
+	position: absolute;
+	z-index:-1;
+	margin-top: -72px;
+	margin-left: -100px;
+}
+
+#keyvisual{
+	width: 100%;
+	height: 12%;
+	margin-top: 6%;
+	background-image: url('../image/IMG_1615-1.png');
+	background-attachment:fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#tea{
+	width: 90%;
+	height: 830px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#tea h1{
+	text-align: center;
+	font-family:bodytext;
+	font-size: 46px;
+	margin-top: 0;
+	margin-bottom: 6%;
+	padding-top: 80px;
+}
+
+.hapa4{
+	width: 90px;
+	z-index:-1;
+	position: absolute;
+	margin-top: 67px;
+	margin-left: 515px;
+}
+
+.keyvisual{
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	margin-top: 10%;
+	margin-left: -18%;
+}
+
+#tea ul{
+	width: 100%;
+	padding-left: 165px;
+}
+
+#tea li{
+ list-style: none;
+ float: left;
+ margin-left: 2%;
+ margin-bottom: 2%;
+}
+
+#tea li p{
+ text-align: center;
+ margin-bottom: 0;
+ margin-top: 12%;
+ font-size: 13px;
+ color:#000;
+}
+
+#tea li span{
+ text-align: center;
+ font-size: 15px;
+ color:#000;
+}
+
+#tea li :hover{
+	 opacity: 0.7;
+}
+
+.paborder{
+	width: 95%;
+}
+
+.pakeage{
+ height: 180px;
+ margin-top: 8%;
+ vertical-align : middle;
+}
+
+.pa01,.pa02,.pa03,.pa05{
+	margin-left: 0.6%;
+}
+
+.pa04,.pa07{
+	margin-left: -0.1%;
+}
+
+.pa06{
+	margin-left: 1.6%;
+}
+
+.pa08{
+	margin-left: 1.1%;
+}
+
+.pa09{
+	margin-left: 1.2%;
+}
+
+footer{
+	height: 100px;
+	clear: both;
+	text-align: center;
+}
+
+footer span{
+	line-height: 100px;
+}
+
+@font-face{
+	font-family:'bodytext'; 
+	src: url('../font/ヒラギノ明朝 Std W4.otf') format("opentype");
+}
+
+@font-face{
+	font-family:'menutex'; 
+	src: url('../font/yumin.ttf') format("opentype");
+}
+
+@font-face{
+	font-family:'teapot'; 
+	src: url('../font/RoNKSeiKaiStd-Lt.otf') format("opentype");
+}
+
+@font-face{
+	font-family:'paketext'; 
+	src: url('../font/GenEiLateGo.otf') format("opentype");
+}
+
+
+@media  screen and (max-width:640px) {
+
+.mainmenu{
+	display: none;
+}
+
+.mainmenu1{
+	display: none;
+}
+
+#top-bar{
+	display: none;
+}
+
+#toplogo{
+	display: none;
+}
+
+#toplogo_smart{
+	display: inline-block;
+	margin-top: 160px;
+}
+
+.hapa1{
+	width: 100px;
+	margin-top: 100px;
+	margin-left: 270px;
+}
+
+#about{
+	margin-left: 75px;
+	padding-left: 0;
+	height: 1000px;
+	width: 515px;
+}
+
+#about h1{
+	text-align: center;
+	font-size: 56px;
+}
+
+.about1 {
+	display: none;
+}
+
+.about2{
+	display: inline-block;
+	font-size: 20px !important;
+	letter-spacing: 4px !important;
+	padding-left: 82px;
+}
+
+.cyaba{
+	margin-top: 35px;
+	margin-left: 45px;
+}
+
+.hapa2{
+	margin-top: 23px;
+	margin-left: 38px;
+}
+
+#teamap{
+	max-width: 640px;
+}
+
+#teamap h1{
+	margin-left: 0;
+}
+
+.hapa3{
+	width: 84px;
+	margin-top: 17px;
+	margin-left: -184px;
+}
+
+.taiwanclear{
+	display: none;
+}
+
+.taiwan_sm{
+	display: inline-block;
+	margin-top: 60px;
+}
+
+.mapall{
+	padding-left: 0;
+}
+
+.taipei{
+	width: 60px;
+	font-size: 20px;
+	margin-top: -518px;
+	margin-left: 365px;
+}
+
+.taipei:hover .taipei1{
+	content: url('../image/tekanno_sm.png');
+	margin-top: -100px;
+	margin-left: 30px;
+}
+
+.taipei:hover:after{
+	content: url('../image/taipei-green_sm.png');
+	margin-top: -39px;
+	margin-left: 8px;
+}
+
+.shinpei{
+	width: 60px;
+	font-size: 20px;
+	margin-top: -486px;
+	margin-left: 375px;
+}
+
+.shinpei:hover .shinpei1{
+	content: url('../image/bunnzan_sm.png');
+	margin-top: -55px;
+	margin-left: 24px;
+}
+
+.shinpei:hover .shinpei2{
+	content: url('../image/sansya_sm.png');
+	margin-top: -10px;
+	margin-left: 10px;
+}
+
+.shinpei:hover:after{
+	content: url('../image/shinpei-green_sm.png');
+	margin-top: -83px;
+}
+
+.touen{
+	width: 60px;
+	font-size: 20px;
+	margin-top: -503px;
+	margin-left: 305px;
+}
+
+.touen:hover .touen1{
+	content: url('../image/ryutan_sm.png');
+	margin-top: -110px;
+	margin-left: -300px;
+}
+
+.touen:hover:after{
+	content: url('../image/touen-green_sm.png');
+	margin-top: -39px;
+	margin-left: -2px;
+}
+
+.shinju{
+	width: 60px;
+	font-size: 20px;
+	margin-top: -455px;
+	margin-left: 305px;
+}
+
+.shinju:hover .shinju1{
+	content: url('../image/touhou_sm.png');
+	margin-top: -70px;
+	margin-left: -315px;
+}
+
+.shinju:hover:after{
+	content: url('../image/shinju-green_sm.png');
+	margin-top: -53px;
+	margin-left: -14px;
+}
+
+.nantou{
+	width: 60px;
+	font-size: 20px;
+	margin-top: -320px;
+	margin-left: 275px;
+}
+
+.nantou:hover .nantou1{
+	content: url('../image/toucyou_sm.png');
+	margin-top: -60px;
+	margin-left: 70px;
+}
+
+.nantou:hover .nantou2{
+	content: url('../image/souhaku_sm.png');
+	margin-top: -16px;
+	margin-left: 52px;
+}
+
+.nantou:hover .nantou3{
+	content: url('../image/arisan_sm.png');
+}
+
+.nantou:hover .nantou4 {
+	content: url('../image/nichigetu_sm.png');
+	margin-top: 20px;
+	margin-left: -270px;
+}
+
+.nantou:hover:after{
+	content: url('../image/nantou-green_sm.png');
+	margin-top: -82px;
+	margin-left: -25px;
+}
+
+.kagi{
+	width: 60px;
+	font-size: 20px;
+	margin-top: -263px;
+	margin-left: 215px;
+}
+
+.kagi:hover .kagi1{
+	content: url('../image/kousan_sm.png');
+	margin-top: -125px;
+	margin-left: -220px;
+}
+
+.kagi:hover:after{
+	content: url('../image/kagi-green_sm.png');
+	margin-top: -39px;
+	margin-left: -38px;
+}
+
+.menu-section{
+	display: inline-block
+}
+
+.menu-toggle {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+}
+.menu-toggle.on .one {
+  -moz-transform: rotate(45deg) translate(7px, 7px);
+  -ms-transform: rotate(45deg) translate(7px, 7px);
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+  transform: rotate(45deg) translate(7px, 7px);
+}
+.menu-toggle.on .two {
+  opacity: 0;
+}
+.menu-toggle.on .three {
+  -moz-transform: rotate(-45deg) translate(8px, -10px);
+  -ms-transform: rotate(-45deg) translate(8px, -10px);
+  -webkit-transform: rotate(-45deg) translate(8px, -10px);
+  transform: rotate(-45deg) translate(8px, -10px);
+}
+
+.one,
+.two,
+.three {
+  width: 100%;
+  height: 5px;
+  background: white;
+  margin: 6px auto;
+  backface-visibility: hidden;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+  list-style: none;
+  margin: 4em auto;
+  text-align: center;
+}
+nav ul.hidden {
+  display: none;
+}
+nav ul a {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  text-decoration: none;
+  color: white;
+  font-size: 3em;
+  line-height: 1.5;
+  width: 100%;
+  display: block;
+}
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-section.on {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+#menu_sm{
+	position: fixed;
+	top: 40px;
+	left: 610px;
+}
+
+.clickmap{
+	display: inline-block;
+	margin-top: -45px;
+	padding-left: 330px;
+}
+
+.move_on_map{
+	display: none;
+}
+
+.ita{
+	width: 640px;
+    height: 460px;
+}
+
+#teapot{
+	margin-left: 0;
+	padding-left: 38px;
+}
+
+#teapot h1{
+	font-size: 50px;
+}
+
+.taitle1{
+	font-size: 41px;
+}
+
+}

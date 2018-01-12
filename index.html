@@ -1,0 +1,219 @@
+ <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Rindayla</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="shortcut icon" href="hapa0.ico">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/normalize.css" rel="stylesheet" type="text/css">
+
+<script>
+$(function(){
+   $('a[href^=#]').click(function() {
+      var speed = 400;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+
+$(function(){
+　$(window).load(function(){
+
+    $(".menu-toggle").on('click', function() {
+  $(this).toggleClass("on");
+  $('.menu-section').toggleClass("on");
+  $("nav ul").toggleClass('hidden');
+});
+
+　　$(window).bind('scroll resize', function(){
+　　var $this = $(this);
+　　var $this_Top=$this.scrollTop();
+
+　　if($this_Top < 200){
+　　　$('#top-bar').stop().animate({top:"-70px"});
+　　　}
+　　　　if($this_Top > 200){
+　　　　$('#top-bar').stop().animate({top:"0px"});
+　　　 }
+　　}).scroll();
+　});
+});
+
+</script>
+
+</head>
+
+<body>
+    <ul class="mainmenu">
+        <li class="col-lg-7"><a href="#"></a></li>
+        <li class="col-md-1"><a href="#toplogo">Home</a></li>
+        <li class="col-md-1"><a href="#about">About</a></li>
+        <li class="col-md-1"><a href="#teamap">TeaMap</a></li>
+        <li class="col-md-1"><a href="#teapot">Teapot</a></li>
+        <li class="col-md-1"><a href="#tea">Tea</a></li>
+</ul>
+
+<div id="top-bar">
+     <ul class="mainmenu1">
+        <li class="col-lg-7"><img src="image/logo_menu.png"><a href="#"></a></li>
+        <li class="col-md-1"><a href="#toplogo">Home</a></li>
+        <li class="col-md-1"><a href="#about">About</a></li>
+        <li class="col-md-1"><a href="#teamap">TeaMap</a></li>
+        <li class="col-md-1"><a href="#teapot">Teapot</a></li>
+        <li class="col-md-1"><a href="#tea">Tea</a></li>
+</ul>
+</div>
+
+<div id="menu_sm">
+<div class="menu-section">
+  <div class="menu-toggle">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </div>
+  <nav>
+		<ul role="navigation" class="hidden">
+			<li><a href="#">work</a></li>
+			<li><a href="#">about</a></li>
+			<li><a href="#">resume</a></li>
+			<li><a href="#">contact</a></li>
+		</ul>
+	</nav>
+</div>
+</div>
+
+<div id="top-bar1">
+    <ul class="mainmenu2">
+        <li class="col-lg-7"><img src="image/logo_menu.png"><a href="#"></a></li>
+        <li class="col-md-1"><a href="#toplogo">Home</a></li>
+        <li class="col-md-1"><a href="#about">About</a></li>
+        <li class="col-md-1"><a href="#teamap">TeaMap</a></li>
+        <li class="col-md-1"><a href="#teapot">Teapot</a></li>
+        <li class="col-md-1"><a href="#tea">Tea</a></li>
+    </ul>
+</div>
+
+<div id="toplogo">
+    <img src="image/logo4.png" class="mainlogo">
+    <a href="#about"><img src="image/hapa1_2.png" class="hapa1"></a>
+</div>
+
+<div id="toplogo_smart">
+    <img src="image/logo_smart.png" class="mainlogo">
+    <a href="#about"><img src="image/hapa1_2.png" class="hapa1"></a>
+</div>
+
+<div id="about">
+<img src="image/hapa2.png" class="hapa2">
+<h1>台湾の「お茶」</h1>
+<p class="about1">
+Rindayla（リンデイラ）は台湾茶をより多くの人<br>
+に知って楽しめるために立ち上げたブランドです。<br>
+台湾茶の特徴は香りが強く、それと飲んだ後にお茶<br>
+の後味“甘味”が喉から昇りってきます。<br>
+台湾茶の種類は多くあって、私たちRindaylaは<br>
+その中から主流や人気がある10種類を選び出し、<br>
+美味しいお茶をお届けします。</p>
+
+<p class="about2">
+Rindayla（リンデイラ）は台湾茶<br>
+をより多くの人に知って楽しめるた<br>
+めに立ち上げたブランドです。<br>
+台湾茶の特徴は香りが強く、それと<br>
+飲んだ後にお茶の後味“甘味”が喉か<br>
+ら昇りってきます。<br>
+台湾茶の種類は多くあって、私たち<br>
+Rindaylaはその中から主流や人気<br>
+がある10種類を選び出し、美味しい<br>
+お茶をお届けします。</p>
+
+<img src="image/IMG_1598_1.png" class="cyaba">
+</div>
+
+<div id="teamap">
+    <img src="image/hapa3.png" class="hapa3">
+    <h1>お茶の「産地」</h1>
+    <div class="mapall">
+    <img src="image/taiwan_clear.png" class="taiwanclear">
+    <img src="image/taiwan_sm.png" class="taiwan_sm">
+    <div class="taipei">台北市<div class="taipei1" onclick="location.href='../Rindayla_web_tea/index.html';"></div></div>
+    <div class="shinpei">新北市<div class="shinpei1"></div>
+    <div class="shinpei2"></div></div>
+    <div class="touen">桃園市<div class="touen1"></div></div>
+    <div class="shinju">新竹県<div class="shinju1"></div></div>
+    <div class="taicyu">台中市</div>
+    <div class="nantou">南投県<div class="nantou1"></div>
+    <div class="nantou2"></div><div class="nantou3"></div>
+    <div class="nantou4"></div></div>
+    <div class="kagi">嘉義県<div class="kagi1"></div></div>
+    <div><img src="image/move_on_map.png" class="move_on_map"></div>
+    <div><img src="image/click_map.png" class="clickmap"></div>
+    </div>
+</div>
+
+<div id="teapot">
+    <img src="image/ita1.png" class="ita">
+    <img src="image/IMG_1586_1.png" class="bot">
+    <img src="image/hapaall1.png" class="hapaall">
+    <h1>台湾<span class="taitle1">の</span>茶道</h1>
+    <p>お茶を美味しく淹れるために一番重要な<br>
+    もので、お茶の味を引き出す主役が茶壺<br>
+    です。<br>
+    茶壺の形が多様で、大きさや材質の違い<br>
+    で違うお茶適している。<br>
+    いい茶壺はお茶の味をより良くする以外<br>
+    に、観賞用やコレクションの品にもなり<br>
+    ます。</p>
+    <span class="more"><a href="../Rindayla_web_teapot/index.html">詳しくはこちら→</a></span>
+</div>
+
+<div id="keyvisual"></div>
+
+    <div id="tea">
+        <img src="image/hapa0.png" class="hapa4">
+        <h1>ラインナップ</h1>
+        <ul>
+           <li><div style="background-image:url(image/teaborder1.png);width:186px;height:294px;text-align:center;float:right;" onclick="location.href='../Rindayla_web_tea/index.html';">
+            <img src="image/pa01.png" class="pakeage"><p class="pa01">凍頂烏龍茶<br>
+            （とうちょうウーロン茶）</p><span>More→</span></div></li>
+            <li><div style="background-image:url(image/teaborder2.png);width:186px;height:294px;text-align:center;float:right;" onclick="location.href='../Rindayla_web_tea8/index.html';">
+            <img src="image/pa02.png" class="pakeage"><p class="pa02">木柵鐵觀音<br>
+            （もくさくてっかんのん）</p><span>More→</span></div></li>
+            <li><div style="background-image:url(image/teaborder3.png);width:186px;height:294px;text-align:center;float:right;" onclick="location.href='../Rindayla_web_tea8/index.html';">
+            <img src="image/pa03.png" class="pakeage"><p class="pa03">日月潭紅茶<br>
+            （にちげつたんこうちゃ）</p><span>More→</span></div></li>
+            <li><div style="background-image:url(image/teaborder4.png);width:186px;height:294px;text-align:center;float:right;" onclick="location.href='../Rindayla_web_tea8/index.html';">
+            <img src="image/pa04.png" class="pakeage"><p class="pa04">龍潭龍泉茶<br>
+            （りゅうたんりゅうせんちゃ）</p><span>More→</span></div></li>
+            <li><div style="background-image:url(image/teaborder5.png);width:186px;height:294px;text-align:center;float:right;" onclick="location.href='../Rindayla_web_tea5/index.html';">
+            <img src="image/pa05.png" class="pakeage"><p class="pa05">文山包種茶<br>
+            （ぶんざんほうしゅちゃ）</p><span>More→</span></div></li>
+            <li><div style="background-image:url(image/teaborder6.png);width:186px;height:294px;text-align:center;float:right;" onclick="location.href='../Rindayla_web_tea8/index.html';">
+            <img src="image/pa06.png" class="pakeage"><p class="pa06">臺灣高山茶<br>
+            （台湾こうざんちゃ）</p><span>More→</span></div></li>
+            <li><div style="background-image:url(image/teaborder7.png);width:186px;height:294px;text-align:center;float:right;" onclick="location.href='../Rindayla_web_tea8/index.html';">
+            <img src="image/pa07.png" class="pakeage"><p class="pa07">松柏長青茶<br>
+            （しょうはくちょうせいちゃ）</p><span>More→</span></div></li>
+            <li><div style="background-image:url(image/teaborder8.png);width:186px;height:294px;text-align:center;float:right;" onclick="location.href='../Rindayla_web_tea8/index.html';">
+            <img src="image/pa08.png" class="pakeage"><p class="pa08">東方美人茶<br>
+            （とうほうびじんちゃ）</p><span>More→</span></div></li>
+            <li><div style="background-image:url(image/teaborder9.png);width:186px;height:294px;text-align:center;float:right;" onclick="location.href='../Rindayla_web_tea8/index.html';">
+            <img src="image/pa09.png" class="pakeage"><p class="pa09">阿里山珠露茶<br>
+            （アリサンしゅろちゃ）</p><span>More→</span></div></li>
+            <li><div style="background-image:url(image/teaborder10.png);width:186px;height:294px;text-align:center;float:right;" onclick="location.href='../Rindayla_web_tea8/index.html';">
+            <img src="image/pa10.png" class="pakeage"><p class="pa10">三峽龍井茶<br>
+            （さんきょうロンジンちゃ）</p><span>More→</span></div></li>
+        </ul>
+    </div>
+</body>
+<footer><div><span>© Rindayla All Rights Reserved.</span></div></footer>
+</html>
